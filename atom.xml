@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Deepak Neupane</title>
- <link href="https://lanyon.getpoole.com/atom.xml" rel="self"/>
- <link href="https://lanyon.getpoole.com/"/>
- <updated>2021-08-28T13:40:22-04:00</updated>
- <id>https://lanyon.getpoole.com</id>
+ <link href="https://dneupan1.github.io/atom.xml" rel="self"/>
+ <link href="https://dneupan1.github.io/"/>
+ <updated>2021-08-28T13:42:18-04:00</updated>
+ <id>https://dneupan1.github.io</id>
  <author>
    <name>Deepak Neupane</name>
    <email>deepak.97733@gmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>How do I setup my Blog?</title>
-   <link href="https://lanyon.getpoole.com/2021/08/27/how-to-create-a-blog/"/>
+   <link href="https://dneupan1.github.io/2021/08/27/how-to-create-a-blog/"/>
    <updated>2021-08-27T00:00:00-04:00</updated>
-   <id>https://lanyon.getpoole.com/2021/08/27/how-to-create-a-blog</id>
+   <id>https://dneupan1.github.io/2021/08/27/how-to-create-a-blog</id>
    <content type="html">&lt;h2&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;
