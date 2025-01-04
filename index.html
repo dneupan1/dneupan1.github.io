@@ -1,140 +1,270 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deepak Neupane - Resume</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fdfdfd;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    header, section, footer {
+      margin-bottom: 20px;
+    }
 
-  <title>
-    
-      Deepak Neupane &middot; 
-    
-  </title>
+    header {
+      text-align: center;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
 
-  
-  <link rel="canonical" href="https://dneupan1.github.io/">
-  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
 
-  <link rel="stylesheet" href="https://dneupan1.github.io/public/css/poole.css">
-  <link rel="stylesheet" href="https://dneupan1.github.io/public/css/syntax.css">
-  <link rel="stylesheet" href="https://dneupan1.github.io/public/css/lanyon.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+    h2 {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dneupan1.github.io/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="https://dneupan1.github.io/public/favicon.ico">
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://dneupan1.github.io/atom.xml">
+    a:hover {
+      text-decoration: underline;
+    }
 
-  
+    .contact-info {
+      margin: 10px 0;
+      font-size: 0.95rem;
+    }
+
+    /* Section Titles */
+    h3.section-title {
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #007BFF;
+      color: #007BFF;
+      font-size: 1.2rem;
+    }
+
+    /* Content Blocks */
+    .content-block {
+      margin-bottom: 20px;
+    }
+
+    /* Experience */
+    .job-title {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .date-range {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    /* Lists */
+    ul {
+      margin-left: 20px;
+      list-style: disc;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* Buttons */
+    .top-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .btn {
+      padding: 8px 12px;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    /* Print Styles */
+    @media print {
+      /* Hide buttons */
+      .top-buttons {
+        display: none;
+      }
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
+      h3.section-title {
+        border-bottom: 2px solid #000;
+        color: #000;
+      }
+    }
+  </style>
 </head>
+<body>
 
-
-  <body>
-
-    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>@DEEPAKAE</p>
+  <!-- Top Buttons: Download PDF & More About Me -->
+  <div class="top-buttons">
+    <!-- Updated Button: Direct Download Link -->
+    <a href="DeepakNeupaneResume.pdf" class="btn" download="DeepakNeupaneResume.pdf">
+      Download Resume
+    </a>
+    <a href="about.html" class="btn">More About Me</a>
   </div>
 
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item active" href="https://dneupan1.github.io/">Home</a>
-
-    
-
-    
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-          <a class="sidebar-nav-item" href="https://dneupan1.github.io/about/">About</a>
-        
-      
-    
-      
-    
-
-    <span class="sidebar-nav-item">Currently v1.0.0</span>
-  </nav>
-
-  <div class="sidebar-item">
-    <p>
-      &copy; 2021. All rights reserved.
-    </p>
-  </div>
-</div>
-
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">Deepak Neupane</a>
-            <small></small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
-        <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://dneupan1.github.io/2021/08/27/how-to-create-a-blog/">
-        How do I setup my Blog?
-      </a>
-    </h1>
-
-    <span class="post-date">27 Aug 2021</span>
-
-    <h2>Background</h2>
-
-<p>
-I've always wanted to set up a minimalistic blog where I post my train of thoughts. Setting up a static HTML/CSS webpage isn't much work for a programmer.
-
-But what if you don't want to spend time playing around with HTML/CSS layout and just want to get started with writing instead. Because this is what I wanted. I wanted to take a theme aleady available and just start publishing.
-</p>
-
-<h3>Why should I have a blog?</h3>
-<p>
-Well, it's not a must, but it's nice to have. For me this is kind of like a "tech diary".
-
-Also, if you're applying for a job or something like that, it helps to have an online portfolio with your information and skillsets.
-</p>
-
-  </div>
-  
-</div>
-
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
-</div>
-
-      </div>
+  <!-- Resume Content Wrapped in a Container -->
+  <div id="resume-content">
+    <!-- Contact Information -->
+    <div style="text-align: center; margin-bottom: 20px;">
+      <h1>Deepak Neupane</h1>
+      <p>
+        deepak.97733@gmail.com | 989-964-8179
+      </p>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <!-- Summary -->
+    <section>
+      <h3 class="section-title">Summary</h3>
+      <div class="content-block">
+        <p>
+          Highly collaborative and detail-oriented Software Engineer with over four 
+          years of experience. Skilled in DevOps practices, test 
+          automation, and in-house tools development, with a track record of effective 
+          communication and problem-solving across cross-functional teams. Adept at managing 
+          CI/CD pipelines, evaluating third-party tools, and delivering reliable DevOps 
+          infrastructure. Dedicated to continuous improvement and innovation, leveraging both 
+          technical expertise and strong interpersonal skills to drive results.
+        </p>
+      </div>
+    </section>
 
-    <script src='/public/js/script.js'></script>
-  </body>
+    <!-- Experience -->
+    <section>
+      <h3 class="section-title">Experience</h3>
+
+      <div class="content-block">
+        <p class="job-title">Embedded Software Engineer III at HL Mechatronics, 2020 - Present</p>
+        <ul>
+          <li>
+              <strong>Software Development:</strong> Created automation scripts and 
+              internal applications using C, C#, Java, Groovy, and Python. Utilized Django 
+              and Flask for application development, handling in-house deployment processes 
+              from start to finish.
+          </li>
+          <li>
+            <strong>DevOps:</strong> Managed CI/CD pipelines for embedded software projects 
+            using GitLab, Bitbucket, and PTC Integrity. Structured and maintained code 
+            repositories, oversaw Jenkins build servers, and coordinated software 
+            deliverables with developers.
+          </li>
+          <li>
+            <strong>Software Tools Evaluation:</strong> Assessed various tools (hardware and/or software) 
+            (PTC Integrity, Matlab, Simulink, Polyspace, Vector DaVinci Configurator, Vector 
+            CANoe, CANape, Intrepid RADComet, VehicleSpy) for embedded software development 
+            for organizational needs.
+          </li>
+          <li>
+            <strong>Test Automation:</strong> Led embedded test automation initiatives using 
+            ECUTest, Python, and Shell/Batch scripts. Instrumented fault injection code, 
+            executed test scenarios, and automated processes to enhance efficiency.
+          </li>
+          <li>
+            <strong>Manufacturing Support:</strong> Provided support during manufacturing by 
+            bench testing UDS and XCP services, collaborating with factory engineers to 
+            resolve issues on the assembly line.
+          </li>
+          <li>
+            <strong>Embedded Software Development & Testing:</strong> Contributed to 
+            Bootloader, Hardware Security Module, and application software development. 
+            Familiar with cybersecurity features (e.g., CMAC verification) and diagnostic 
+            testing on Aurix Microcontrollers using iSystems tools (bluebox, winIDEA), 
+            Tasking Tricore compiler, and WindRiver compiler.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h3 class="section-title">Education</h3>
+      <div class="content-block">
+        <p class="job-title">Master of Science in Software Engineering and IT, 2024</p>
+        <p>Oakland University, Rochester, Michigan, USA</p>
+      </div>
+      <div class="content-block">
+        <p class="job-title">Bachelor of Science in Computer Science, 2020</p>
+        <p>Saginaw Valley State University, Saginaw, Michigan, USA</p>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h3 class="section-title">Technical Skills</h3>
+      <div class="content-block">
+        <ul>
+          <li>DevOps (CI/CD, Jenkins, GitLab, Bitbucket, PTC Integrity)</li>
+          <li>Programming Languages: C, C#, Java, Groovy, Python</li>
+          <li>Frameworks: Django, Flask, React, Springboot</li>
+          <li>Embedded Systems Development & Testing</li>
+          <li>Test Automation (ECUTest, Python, Shell/Batch Scripts)</li>
+          <li>Tool Evaluation (Matlab, Simulink, Polyspace, Vector CANoe/CANape/DaVinci, 
+              Intrepid RADComet, VehicleSpy)</li>
+          <li>Cybersecurity (Penetration testing, fault injection testing, static code analysis)</li>
+          <li>Build & Deployment Tools: Jenkins</li>
+          <li>iSystems Tools (bluebox, winIDEA), Tasking Tricore Compiler, WindRiver Compiler</li>
+        </ul>
+      </div>
+    </section>
+  </div> <!-- End of resume-content -->
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Deepak Neupane. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
