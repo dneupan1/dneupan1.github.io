@@ -68,6 +68,39 @@
     .btn:hover {
       background-color: #0056b3;
     }
+    .projects-section {
+      margin-top: 20px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      background-color: #fff;
+    }
+    .project-details {
+      margin-top: 10px;
+    }
+    .tech-stack {
+      margin-top: 10px;
+    }
+    .tech-tag {
+      display: inline-block;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-right: 5px;
+    }
+    .projects-footer {
+      margin-top: 20px;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -90,20 +123,42 @@
     </div>
   </section>
 
-  <section>
-    <h2 class="section-title">Unpublished Works & Personal Projects</h2>
-    <div class="content-block">
-      <p>
-        <!-- Describe any personal or experimental projects you want to highlight -->
-        I have developed a few prototypes in my free time.
-      </p>
-      <ul>
-        <li>Raspbery Pi Home Server</li>
-      </ul>
-      <p>
-        Although these projects aren't publicly published, they have helped me expand my problem-solving and development skills.
-      </p>
+  <section class="projects-section">
+    <h2 class="section-title">Some Side Projects</h2>
+    
+    <div class="projects-grid">
+      <!-- Real Estate Project -->
+      <article class="project-card">
+        <h3>Real Estate Landing Page</h3>
+        <div class="project-details">
+          <p>A custom website built for a real estate agent featuring property listings and contact information.</p>
+          <a href="https://ganeshneupane.com" class="project-link" target="_blank" rel="noopener">ganeshneupane.com</a>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Home Server Project -->
+      <article class="project-card">
+        <h3>Raspberry Pi Home Server</h3>
+        <div class="project-details">
+          <p>Personal home server setup for media streaming, file sharing, and home automation.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Raspberry Pi</span>
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">Network Administration</span>
+          </div>
+        </div>
+      </article>
     </div>
+
+    <p class="projects-footer">
+      These experimental projects have been instrumental in developing my
+      communication skills, technical skills, and problem-solving abilities.
+    </p>
   </section>
 
   <footer>
