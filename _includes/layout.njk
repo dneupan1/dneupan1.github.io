@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ title | default("Deepak Neupane") }}</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <a href="/">Resume</a>
+    <a href="/about.html">About</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/DeepakNeupaneResume.pdf" download>Download PDF</a>
+  </nav>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Deepak Neupane. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
