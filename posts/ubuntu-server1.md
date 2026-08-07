@@ -1,3 +1,9 @@
+---
+title: "Deploy with me"
+description: Just want to post some thoughts outside.
+---
+
+
 # You Got a Ubuntu Server: Now What
 
 Have you ever wondered what it takes to take an app to production?

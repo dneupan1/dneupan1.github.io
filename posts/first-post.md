@@ -1,6 +1,5 @@
 ---
 title: "About This"
-date: 2026-07-26
 description: Just want to post some thoughts outside.
 ---
 
