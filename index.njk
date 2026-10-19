@@ -9,7 +9,7 @@ title: Deepak Neupane - Resume
   <div style="text-align: center; margin-bottom: 30px;">
     <h1>Deepak Neupane</h1>
     <p style="font-weight: bold; margin-bottom: 5px; color: #666; font-size: 0.95rem; letter-spacing: 1px;">
-      SOFTWARE ENGINEER &middot; DEVOPS &middot; TEST AUTOMATION
+      SOFTWARE ENGINEER &middot; EMBEDDED BUILD SYSTEMS &middot; CI/CD &middot; EMBEDDED SECURITY
     </p>
     <p style="font-size: 0.95rem;">
       deepak.97733@gmail.com | 989-964-8179
@@ -21,10 +21,10 @@ title: Deepak Neupane - Resume
     <h3 class="section-title">Summary</h3>
     <div class="content-block">
       <p>
-        Software engineer with six years building internal applications, CI/CD infrastructure, and test automation for safety-critical systems. 
-        Acting technical lead for the team — owning priorities, escalations, and delivery decisions in the lead’s absence. Track record of 
-        evaluating and rolling out tooling adopted org-wide, mentoring engineers onto frameworks I built, and serving as the primary 
-        technical contact for developers across build, pipeline, and automation issues.
+        Software engineer with six years at HL Mechatronics owning complex engineering workflows end to end: the build orchestration,
+        CI pipelines, and internal tools a 40+ engineer team uses to build, test, and release ASIL D steering software on Infineon
+        AURIX TriCore (ISO 26262, MISRA C). Works directly with the engineers who use the software, from requirements through
+        production, and debugs ECU issues alongside plant engineers when the line is down.
       </p>
     </div>
   </section>
@@ -35,51 +35,74 @@ title: Deepak Neupane - Resume
 
     <div class="content-block">
       <p class="job-title">Software Engineer III &nbsp;|&nbsp; HL Mechatronics &nbsp;|&nbsp; 2020 - Present</p>
+      <p style="font-style: italic; color: #666;">
+        Acting technical lead for the 6-person software tools and integration testing team in the lead's absence.
+      </p>
+
+      <p style="font-weight: bold; margin-top: 12px; margin-bottom: 4px;">Build orchestration and CI/CD</p>
       <ul>
         <li>
-          <strong>Software Development —</strong> Built internal applications and automation tooling in Python, Java, C#, C, and Groovy. Developed 
-          web applications and REST services with Django over SQLite and PostgreSQL, using Redis for caching and session management. 
-          Owned the full lifecycle from requirements through containerized deployment on self-managed infrastructure.
+          Wrote the Python and Groovy build orchestration that runs on Jenkins and GitLab for 10+ production and advanced-development
+          programs. 40+ software, architecture, and motor controls engineers build, test, and ship 3+ customer releases a week through it.
+          Primary escalation point when a build or pipeline breaks on any project.
         </li>
         <li>
-          <strong>DevOps & Infrastructure —</strong> Managed CI/CD pipelines across GitLab, Bitbucket, Jenkins, and PTC Integrity. Containerized 
-          applications with Docker and deployed to Kubernetes, instrumenting services with Prometheus and Grafana for metrics and 
-          alerting. Defined repository structure and branching strategy, administered build servers, and coordinated release deliverables 
-          across teams. Primary escalation point for build and pipeline failures, unblocking developers and minimizing downtime from 
-          tooling issues.
+          Cut MCU diagnostics fault-injection testing from 3+ days to under 4 hours per release by designing a multi-stage CI workflow
+          that chains code instrumentation, test case generation, and on-target execution, with logs and results at every stage. It
+          exercises the ASIL D safety mechanisms and has caught performance and communication defects before customer release.
         </li>
         <li>
-          <strong>Test Automation & Quality Engineering —</strong> Led the test automation program, building Python and Shell/Batch frameworks that 
-          replaced manual regression cycles. Instrumented fault injection code to validate error handling and system resilience under 
-          failure conditions. Onboarded and mentored engineers on the framework, establishing the patterns and review practices the 
-          team adopted.
+          Own configuration management for platform software: repository structure, branching strategy, build servers, and release
+          packages in GitLab and PTC Integrity.
         </li>
         <li>
-          <strong>Technical Evaluation & Tool Selection —</strong> Evaluated and recommended development, static analysis, and diagnostic tooling 
-          adopted across the organization, including MATLAB/Simulink, Polyspace, PTC Integrity, and the Vector toolchain.
+          Ran the tool evaluations that led to Polyspace, PTC Integrity, the Intrepid toolchain, and the Vector toolchain being adopted
+          across the organization.
+        </li>
+      </ul>
+
+      <p style="font-weight: bold; margin-top: 12px; margin-bottom: 4px;">Developer tools</p>
+      <ul>
+        <li>
+          Built an internal developer tools portal in Django, in production: UDS security access key computation for development ECUs
+          and CMAC calculation over firmware binaries.
         </li>
         <li>
-          <strong>Systems & Security Engineering —</strong> Contributed to bootloader, Hardware Security Module, and application software on 
-          resource-constrained targets. Implemented and verified cybersecurity features including CMAC verification. Performed 
-          penetration testing, fault injection testing, and static code analysis.
+          Worked with the prototype team to build a build-request tracker in Django, now in production. Engineers register prototype
+          parts and submit hardware modification requests that the prototype team picks up and works.
+        </li>
+        <li>Wrote Python generators for memory-usage and operating system task reports.</li>
+        <li>
+          Set up and maintain Vector CANoe, CANalyzer, and CANape workspaces for 10+ projects, used by 40+ engineers to talk to ECUs.
+        </li>
+      </ul>
+
+      <p style="font-weight: bold; margin-top: 12px; margin-bottom: 4px;">AUTOSAR, security, and diagnostics</p>
+      <ul>
+        <li>
+          Configure and integrate AUTOSAR basic software (BSW) modules from Vector and EB tresos stacks into platform software.
+          Configured and verified CMAC-based secure boot across the bootloader and HSM on AURIX TriCore, and ran penetration tests
+          against the ECU.
         </li>
         <li>
-          <strong>Cross-Functional Support —</strong> Bench tested diagnostic and calibration services (UDS, XCP) with factory engineers to resolve 
-          production line issues under time pressure.
+          Wrote the in-house Python libraries behind our tracetronic ECU-TEST integration tests for UDS diagnostics and XCP calibration,
+          run on bench hardware with a live motor and traced to requirements in PTC Integrity. Trained junior engineers to write and
+          review tests with them.
+        </li>
+        <li>
+          Work on the bench with plant production engineers to root-cause UDS and CAN issues that stop the production line, under time
+          pressure.
         </li>
       </ul>
     </div>
   </section>
 
-  <!-- Education & Certifications -->
+  <!-- Education -->
   <section>
-    <h3 class="section-title">Education & Certifications</h3>
+    <h3 class="section-title">Education</h3>
     <div class="content-block">
       <p class="job-title">M.S., Software Engineering and Information Technology &nbsp;|&nbsp; 2024</p>
       <p style="margin-left: 20px;">Oakland University — Rochester, Michigan</p>
-    </div>
-    <div class="content-block">
-      <p class="job-title">Google Cloud Associate Cloud Engineer &nbsp;|&nbsp; In progress</p>
     </div>
   </section>
 
@@ -88,15 +111,11 @@ title: Deepak Neupane - Resume
     <h3 class="section-title">Technical Skills</h3>
     <div class="content-block">
       <ul style="list-style: none; margin-left: 0;">
-        <li><strong>Languages:</strong> Python, Java, C#, C, Groovy</li>
-        <li><strong>Frameworks:</strong> Django, React</li>
-        <li><strong>DevOps & CI/CD:</strong> Jenkins, GitLab, Bitbucket, Git, PTC Integrity</li>
-        <li><strong>Databases & Caching:</strong> SQLite, PostgreSQL, Redis</li>
-        <li><strong>Infrastructure & Monitoring:</strong> Docker, Kubernetes, Prometheus, Grafana</li>
-        <li><strong>Test & Quality:</strong> Python, Shell/Batch, ECUTest, fault injection testing, penetration testing, static code analysis (Polyspace)</li>
-        <li><strong>Systems & Embedded:</strong> Tasking TriCore and Wind River compilers, iSYSTEM (winIDEA, BlueBox), MATLAB/Simulink</li>
-        <li><strong>Domain Tooling:</strong> Vector CANoe, CANape, DaVinci Configurator; UDS, XCP</li>
-        <li><strong>Leadership:</strong> Acting technical lead, mentoring & onboarding, developer enablement, technical evaluation and tool selection</li>
+        <li><strong>Languages:</strong> Python, C, Groovy, Java, C#; Django</li>
+        <li><strong>Build &amp; CI/CD:</strong> Jenkins, GitLab CI, Git, PTC Integrity (configuration management, requirements traceability), Linux and Windows build servers</li>
+        <li><strong>Embedded &amp; Security:</strong> Infineon AURIX TriCore, AUTOSAR BSW (Vector, EB tresos), secure boot, HSM, CMAC, Tasking and Wind River compilers</li>
+        <li><strong>Test &amp; Tools:</strong> tracetronic ECU-TEST, fault injection, penetration testing, Polyspace, Vector CANoe/CANape/DaVinci Configurator, iSYSTEM winIDEA/BlueBox</li>
+        <li><strong>Standards:</strong> ISO 26262 (ASIL D), MISRA C, AUTOSAR Classic, UDS (ISO 14229), XCP, CAN</li>
       </ul>
     </div>
   </section>
